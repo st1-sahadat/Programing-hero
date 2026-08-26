@@ -1,0 +1,359 @@
+/* google_fonts_link */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* Navbar Styling */ 
+.defult_style{
+	width: 80%;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  border-bottom: 1px solid #949393;
+}
+.logo {
+	cursor: pointer;
+}
+.nav_links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+} 
+.nav_links a {
+  text-decoration: none;
+  color: #363636;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.nav_links a:hover {
+  color: #000;
+} 
+.defult_btn{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #0044cc;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+.btn_register{
+  background-color: #0056ff;
+}
+.btn_register a {
+  color: white; 
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+} 
+.defult_btn:hover {
+  background-color: #01308d;
+  transform: translateY(-2px);
+  transition: 1s;
+}
+
+
+
+/*hero_section_style*/
+.hero-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background:  linear-gradient(to left, rgba(255,0,0,0), rgb(0, 0, 0)),
+  				url('./Image/banner.jpg') no-repeat center center/cover;
+}
+
+/* Content Wrapper */
+.hero-content {
+  max-width: 800px;
+  color: #ffffff;
+}
+
+/* Typography */
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  margin-top: 100px;
+}
+
+.hero-title .italic-text {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 40px;
+  font-weight: 400;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-content .btn_register{
+	margin:150px 0 50px;
+}
+
+
+
+
+/*card section style*/  
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+/* 2 Column x 2 Row Grid Layout */
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Speaker Cards */
+.speaker-card {
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Image Container */
+.image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+} 
+.speaker-info {
+  padding: 24px;
+}
+
+
+
+/*Price_card_section*/
+.pricing_section .pricing_Allcontant{
+	width: 70%;
+	margin: 80px auto;
+  padding: 0 20px;
+}
+.pricing_header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.pricing_header .section_title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.pricing_header .section_subtitle {
+  font-size: 1rem;
+  color: #666666;
+}
+.pricing_container{
+	display: flex;
+	justify-content: space-between;
+}
+.pricing_card {
+  border-radius: 12px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pricing_standard{
+  background-color: #f9f9fb;
+  border: 1px solid #eaeaea;
+}
+.pricing_pro {
+  background-color: #0b132b;
+  color: #ffffff;
+  border: 1px solid #0b132b;
+  padding: 40px;
+}
+.card_header .horizontal{
+  border: none;
+  height: 1px;
+  background-color: #333333;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+}
+.card_header {
+  margin-bottom: 30px;
+}
+.tier_label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #666666;
+  display: block;
+  margin-bottom: 10px;
+}
+.pricing_pro .tier_label{
+  color: #94a3b8;
+}
+.card_header .price {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.price_period {
+  font-size: 0.85rem;
+  color: #666666;
+  display: block;
+  margin-top: 5px;
+}
+.card_header .price_period {
+  color: #94a3b8;
+}
+.features-list {
+  margin: 0 0 20px 0;
+}
+.features_list li {
+  font-size: 0.95rem;
+  margin: 0 0 10px  15px;
+  color: #333333;
+}
+.pricing_pro .features_list li {
+  color: #849fc3;
+}
+.pricing_standard .btn_register{
+  background-color: white;
+  border: 1px solid #0044cc;
+}
+.pricing_standard .btn_register a{
+  color: #0044cc;
+}
+.pricing_standard .btn_register:hover{
+  background-color: #01308d;
+  transform: translateY(-2px);
+  transition: 1s;
+}
+.pricing_standard .btn_register:hover a{
+  color: white;
+  transform: translateY(-2px);
+  transition: 1s;
+}
+
+
+
+
+/*our service_section_style*/
+.service_containner{
+  padding: 55px;
+}
+.service_containner .service_contant{
+  text-align: center;
+}
+.service_contant h2{
+  font-size: 2.5rem;
+}
+.service_item{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+.service_item_list {
+  background-color: #eee;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; 
+  padding: 40px 0 40px 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service_item .service_item_list:hover{
+  transform: translateY(-4px); 
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3); 
+} 
+.list_icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  display: inline-block;
+} 
+.service_item_list p {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #111;
+} 
+
+
+/*footer_style*/
+.simple_footer{
+  background-color: #3871e4;
+}
+.footer_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+.footer_brand {
+  display: flex;
+  align-items: center;
+}
+.footer_brand img{
+  width: 100px;
+  height: auto; 
+}
+.copyright {
+  font-size: 0.8rem;
+  color: #1f1e1e;
+  margin: 0;
+}
+.footer_links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0 0 0  300px;
+  padding: 0;
+}
+.footer_links a {
+  text-decoration: none;
+  color: #232323;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.footer_links a:hover {
+  color: #fcfcfc;
+}
+.footer_brand p{
+  position: absolute;
+  margin: 17px 0 0px 68px ; 
+  color: white;
+}
+.footer_icon{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.footer_icon .fa-brands{
+  font-size: 25px;
+  cursor: pointer;
+}
