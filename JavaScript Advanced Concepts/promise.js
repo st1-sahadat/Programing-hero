@@ -80,17 +80,47 @@
 // .then((r)=>{console.log(r)})
 // .catch((e)=>{console.log(e)})
 
-let promise = new Promise((res,rej)=>{
-    res(`Demo promise`);
-})
-promise.then(r=>{console.log(r)}).catch(e=>{console.log(e)})
+// let promise = new Promise((res,rej)=>{
+//     res(`Demo promise`);
+// })
+// promise.then(r=>{console.log(r)}).catch(e=>{console.log(e)})
 
-async function orderTime(b){
-    return  `Buy : ${b}`
-}
-orderTime("Computer")
-.then((r)=>{console.log(r)})
-.catch((e)=>{console.log(e)})
+// async function orderTime(b){
+//     return  `Buy : ${b}`
+// }
+// orderTime("Computer")
+// .then((r)=>{console.log(r)})
+// .catch((e)=>{console.log(e)})
 
 
- 
+// function fileDownload(){
+//     return new Promise((res, rej)=>{
+//         setTimeout(()=>{
+//             res("File download completed.")
+//         },2000);
+//     })
+// }
+// async function fileProcess(){
+//     console.log("File downloading...");
+//     let downloadFile = await fileDownload();
+//     console.log(downloadFile);
+//     console.log("File Processing...");        
+// }
+// fileProcess()
+
+// async function fetchData(){
+// try{
+//     const fetchValue = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+//     const data = await fetchValue.json();
+//     // console.log(data.title);
+    
+//     const titleArr = data.map(m=>m)
+//     console.log(titleArr);      
+// }catch(e){
+//     console.log(e.message);    
+// }finally {
+//     console.log("Final");
+    
+// }
+// }
+// fetchData();
